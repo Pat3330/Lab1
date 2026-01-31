@@ -5,23 +5,27 @@ public class Main {
         Vehicle vehicle = new Vehicle(4, "Red", 1.5f, "Petrol");
         Car car = new Car(4, "Blue", 1.8f, "Petrol", "BMW");
 
+        //Displaying vehicle information
         int vehicleNumberOfWheels = vehicle.getNumberOfWheels();
         String vehicleColor = vehicle.getColor();
         float vehicleEngineSize = vehicle.getEngineSize();
         String vehicleFuelType = vehicle.getFuelType();
         System.out.println(vehicleNumberOfWheels + " " + vehicleColor + " " + vehicleEngineSize + " " + vehicleFuelType);
-
+        //Changing vehicle information
         vehicle.setNumberOfWheels(5);
         vehicle.setColor("Black");
         vehicle.setEngineSize(2.0f);
         vehicle.setFuelType("Diesel");
 
+        //Displaying vehicle information
         int newVehicleNumberOfWheels = vehicle.getNumberOfWheels();
         String newVehicleColor = vehicle.getColor();
         float newVehicleEngineSize = vehicle.getEngineSize();
         String newVehicleFuelType = vehicle.getFuelType();
 
         System.out.println(newVehicleNumberOfWheels + " " + newVehicleColor + " " + newVehicleEngineSize + " " + newVehicleFuelType);
+
+        //displaying car information
         car.honk();
         car.displayInfo();
         car.setBrand("Ford");
